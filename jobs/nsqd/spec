@@ -1,0 +1,6 @@
+---
+name: nsqd
+templates:
+  ctl.erb: bin/ctl
+
+packages:

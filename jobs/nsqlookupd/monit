@@ -1,0 +1,5 @@
+check process nsqlookupd
+  with pidfile /var/vcap/sys/run/nsqlookupd/nsqlookupd.pid
+  start program "/var/vcap/jobs/nsqlookupd/bin/ctl start"
+  stop program "/var/vcap/jobs/nsqlookupd/bin/ctl stop"
+  group vcap

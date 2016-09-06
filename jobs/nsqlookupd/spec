@@ -1,0 +1,6 @@
+---
+name: nsqlookupd
+templates:
+  ctl.erb: bin/ctl
+
+packages:

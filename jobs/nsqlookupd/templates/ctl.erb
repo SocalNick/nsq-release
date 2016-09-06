@@ -1,0 +1,41 @@
+#!/bin/bash -e
+
+RUN_DIR=/var/vcap/sys/run/nsqlookupd
+LOG_DIR=/var/vcap/sys/log/nsqlookupd
+DATA_DIR=/var/vcap/data/nsqlookupd
+
+PIDFILE=$RUN_DIR/nsqlookupd.pid
+
+source /var/vcap/packages/nsq_utils/pid_utils.sh
+
+case $1 in
+
+  start)
+    pid_guard $PIDFILE "nsqlookupd"
+
+    mkdir -p $RUN_DIR
+    chown -R vcap:vcap $RUN_DIR
+
+    mkdir -p $LOG_DIR
+    chown -R vcap:vcap $LOG_DIR
+
+    mkdir -p $DATA_DIR
+    chown -R vcap:vcap $DATA_DIR
+
+    echo $$ > $PIDFILE
+
+    exec chpst -u vcap:vcap /var/vcap/packages/nsq/bin/nsqlookupd
+
+    ;;
+
+  stop)
+    kill_and_wait $PIDFILE
+
+    ;;
+
+  *)
+    echo "Usage: $0 {start|stop}"
+
+    ;;
+
+esac

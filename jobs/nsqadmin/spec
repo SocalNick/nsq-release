@@ -1,0 +1,6 @@
+---
+name: nsqadmin
+templates:
+  ctl.erb: bin/ctl
+
+packages:

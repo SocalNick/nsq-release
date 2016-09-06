@@ -1,0 +1,3 @@
+[submodule "src/nsq"]
+	path = src/nsq
+	url = https://github.com/nsqio/nsq.git

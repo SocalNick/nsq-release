@@ -1,0 +1,5 @@
+check process nsqadmin
+  with pidfile /var/vcap/sys/run/nsqadmin/nsqadmin.pid
+  start program "/var/vcap/jobs/nsqadmin/bin/ctl start"
+  stop program "/var/vcap/jobs/nsqadmin/bin/ctl stop"
+  group vcap
