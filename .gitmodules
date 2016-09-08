@@ -1,3 +1,36 @@
-[submodule "src/nsq"]
-	path = src/nsq
+[submodule "src/github.com/nsqio/nsq"]
+	path = src/github.com/nsqio/nsq
 	url = https://github.com/nsqio/nsq.git
+[submodule "src/github.com/blang/semver"]
+	path = src/github.com/blang/semver
+	url = https://github.com/blang/semver.git
+[submodule "src/github.com/bmizerany/perks"]
+	path = src/github.com/bmizerany/perks
+	url = https://github.com/bmizerany/perks
+[submodule "src/github.com/julienschmidt/httprouter"]
+	path = src/github.com/julienschmidt/httprouter
+	url = https://github.com/julienschmidt/httprouter
+[submodule "src/github.com/mreiferson/go-snappystream"]
+	path = src/github.com/mreiferson/go-snappystream
+	url = https://github.com/mreiferson/go-snappystream
+[submodule "src/github.com/nsqio/go-nsq"]
+	path = src/github.com/nsqio/go-nsq
+	url = https://github.com/nsqio/go-nsq
+[submodule "src/github.com/BurntSushi/toml"]
+	path = src/github.com/BurntSushi/toml
+	url = https://github.com/BurntSushi/toml
+[submodule "src/github.com/bitly/go-hostpool"]
+	path = src/github.com/bitly/go-hostpool
+	url = https://github.com/bitly/go-hostpool
+[submodule "src/github.com/bitly/go-simplejson"]
+	path = src/github.com/bitly/go-simplejson
+	url = https://github.com/bitly/go-simplejson
+[submodule "src/github.com/bitly/timer_metrics"]
+	path = src/github.com/bitly/timer_metrics
+	url = https://github.com/bitly/timer_metrics
+[submodule "src/github.com/judwhite/go-svc"]
+	path = src/github.com/judwhite/go-svc
+	url = https://github.com/judwhite/go-svc
+[submodule "src/github.com/mreiferson/go-options"]
+	path = src/github.com/mreiferson/go-options
+	url = https://github.com/mreiferson/go-options
