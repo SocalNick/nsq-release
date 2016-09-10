@@ -4,3 +4,5 @@ templates:
   ctl.erb: bin/ctl
 
 packages:
+- nsq
+- nsq_utils
