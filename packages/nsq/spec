@@ -1,0 +1,8 @@
+---
+name: nsq
+
+dependencies:
+- golang
+
+files:
+- github.com/**/*
